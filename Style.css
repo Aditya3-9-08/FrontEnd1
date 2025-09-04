@@ -1,0 +1,204 @@
+/* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e264d;
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #ececec;
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+      color: #56ccf2;
+      outline: none;
+    }
+
+    /* NavBar */
+    nav {
+      background: #14203b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    nav .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    nav .logo span {
+      font-weight: 700;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li:hover::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: #56ccf2;
+      bottom: -6px;
+      left: 0;
+      border-radius: 2px;
+    }
+    nav .actions {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    nav .actions button {
+      background: transparent;
+      border: none;
+      color: #ececec;
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: relative;
+      padding: 5px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav .actions button:hover,
+    nav .actions button:focus {
+      background: #2f80ed;
+      outline: none;
+    }
+
+    /* Main container */
+    main {
+      flex-grow: 1;
+      max-width: 960px;
+      margin: 2rem auto 4rem auto;
+      width: 90%;
+    }
+
+    /* Section styles */
+    section.router-section {
+      background: linear-gradient(180deg, #2f3c7c 0%, #6a6ea9 95%);
+      box-shadow: inset 0 0 100px 15px rgba(0,0,0,0.4);
+      padding: 2.5rem 1.8rem 3rem 1.8rem;
+      margin-bottom: 3rem;
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      color: #e0e4f8;
+      box-shadow:
+        0 8px 15px rgba(20, 32, 59, 0.6),
+        inset 0 0 65px 20px rgba(60, 66, 110, 0.7);
+      transition: transform 0.3s ease;
+    }
+    section.router-section:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Responsive arrangement and image styling */
+    section.router-section:nth-child(even) {
+      flex-direction: row-reverse;
+      background: linear-gradient(180deg, #3a3d70 0%, #898dbb 95%);
+    }
+    .router-image {
+      flex: 1 1 280px;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .router-image img {
+      max-width: 100%;
+      border-radius: 16px;
+      border: 2px solid #4b5ecb;
+      box-shadow: 0 4px 16px rgba(25, 34, 88, 0.7);
+      object-fit: contain;
+      background: #222a66;
+      transition: transform 0.5s ease;
+    }
+    section.router-section:hover .router-image img {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px #5982f1;
+    }
+
+    .router-content {
+      flex: 1 1 300px;
+      color: #d1d6f9;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      user-select: text;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    .router-content h2 {
+      font-weight: 700;
+      font-size: 1.9rem;
+      margin-bottom: 0.3rem;
+      color: #a9b0e4;
+      text-shadow: 1px 1px 4px #222c66;
+      user-select: text;
+    }
+    .router-content h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #c5cbe6;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      user-select: text;
+    }
+
+    /* Footer */
+    footer {
+      background: #14203b;
+      color: #8f94c8;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      user-select: none;
+      border-top: 1px solid #fcfcfc;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 720px) {
+      nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+      section.router-section {
+        flex-direction: column !important;
+        padding: 2rem 1.4rem 2.5rem 1.4rem;
+      }
+      .router-image, .router-content {
+        max-width: 100%;
+        flex: none;
+      }
+      .router-content {
+        text-align: center;
+      }
+    }
