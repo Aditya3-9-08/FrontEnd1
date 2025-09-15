@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-  <title>Router Wifi - Risman Intelligence</title>
-</head>
-<body>
-  <nav role="navigation" aria-label="Main navigation">
-    <a class="logo" aria-label="Risman Intelligence Homepage">
-      <span>Rismannet</span>
-    </a>
-    <ul>
-      <li><a href="index.html" tabindex="0">Home</a></li>
-      <li><a href="DetailProduk1.html" tabindex="0">Produk</a></li>
-      <li><a href="Tentang.html" tabindex="0">Tentang Kami</a></li>
-    </ul>
-    <div class="actions" role="search">
-      <button aria-label="Search"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-      <button aria-label="Shopping Cart"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l.89 4.45a5 5 0 0 0 5 4.55h7.65a1 1 0 0 0 .96-.73L23 6H6"/></svg></button>
-    </div>
-  </nav>
+  <main role="main">
+    <section class="router-section" id="produk" aria-labelledby="wifi-built-title">
+      <div class="router-image" role="img" aria-label="White modern WiFi router with four antennas placed on a dark blue gradient background with sleek reflections and glowing edges">
+        <img src="Foto/WhatsApp Image 2025-07-30 at 09.59.34_0d265df8.jpg" alt="White WiFi router with four antennas on a smooth blue gradient background, representing modern wireless technology"/>
+      </div>
+      <article class="router-content">
+        <p>"Risman Network Banyuwangi adalah penyedia layanan Wifi terpercaya yang menghadirkan koneksi internet cepat dan stabil untuk mendukung kebutuhan digital masyarakat Banyuwangi."</p>
+      </article>
+    </section>
 
     <section class="router-section" aria-labelledby="dual-band-title">
       <div class="router-image" role="img" aria-label="Black dual band WiFi router with eight antennas and blue LED lights on a purple gradient background with subtle shadows">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e8db520-7903-46da-ac53-65aac1f817c7.png" alt="Black dual band WiFi router with eight antennas and blue LED lights on a purple gradient background, symbolizing enhanced connectivity and performance" onerror="this.onerror=null; this.src='https://placehold.co/300x300?text=Image+Not+Available';" />
+        <img src="Foto/wifi2.jpg" alt="Black dual band WiFi router with eight antennas and blue LED lights on a purple gradient background, symbolizing enhanced connectivity and performance" onerror="this.onerror=null; this.src=https" />
       </div>
       <article class="router-content">
         <h3>Dual Band Router</h3>
@@ -32,10 +18,10 @@
         <p>Frekuensi 2.4 GHz cocok untuk jangkauan luas, sedangkan 5 GHz lebih cepat dan stabil untuk aktivitas berat seperti streaming HD atau gaming online. Dengan router dual band, pengguna bisa memilih jaringan sesuai kebutuhan agar koneksi internet lebih optimal.</p>
       </article>
     </section>
-
+    
     <section class="router-section" aria-labelledby="tri-band-title">
       <div class="router-image" role="img" aria-label="Tri-band WiFi router with twelve antennas, sleek black design and glowing blue accents on gradient blue-purple background">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e810bb42-da57-4de3-8001-461f9760977d.png" alt="Black tri-band WiFi router with twelve antennas and glowing blue accents on gradient background, emphasizing advanced network technology" onerror="this.onerror=null; this.src='https://placehold.co/300x300?text=Image+Not+Available';" />
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e810bb42-da57-4de3-8001-461f9760977d.png" alt="Black tri-band WiFi router with twelve antennas and glowing blue accents on gradient background, emphasizing advanced network technology" onerror="this.onerror=null; this.src=//placehold.co/300x300?text=Image+Not+Available';" />
       </div>
       <article class="router-content">
         <h3>Tri-Band Router</h3>
@@ -55,10 +41,3 @@
       </article>
     </section>
   </main>
-
-  <footer role="contentinfo">
-    © 2025 Risman Intelligence.       
-  </footer>
-</body>
-</html>
-
