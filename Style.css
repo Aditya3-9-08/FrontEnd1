@@ -1,4 +1,4 @@
-    * {
+      * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -16,12 +16,7 @@
       color: #ececec;
       text-decoration: none;
     }
-    a:hover,
-    a:focus {
-      color: #56ccf2;
-      outline: none;
-    }
-
+    
     nav {
       background: #14203b;
       display: flex;
@@ -55,11 +50,10 @@
       position: relative;
     }
     nav ul li:hover::after {
-      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
-      background: #56ccf2;
+      background: #002aff;
       bottom: -6px;
       left: 0;
       border-radius: 2px;
@@ -105,8 +99,8 @@
       gap: 2rem;
       color: #e0e4f8;
       box-shadow:
-        0 8px 15px rgba(20, 32, 59, 0.6),
-        inset 0 0 65px 20px rgba(60, 66, 110, 0.7);
+      0 8px 15px rgba(20, 32, 59, 0.6),
+       inset 0 0 65px 20px rgba(60, 66, 110, 0.7);
       transition: transform 0.3s ease;
     }
     section.router-section:hover {
