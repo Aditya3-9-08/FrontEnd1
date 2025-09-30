@@ -1,4 +1,3 @@
-
 <head>
 <?php include "component/header.php" ?>
 </head>
@@ -7,4 +6,4 @@
     <?php include "page/home.php" ?>
     <?php include "component/footer.php" ?>
 </body>
-</html>
+</html> 
